@@ -1,0 +1,9 @@
+nginx:
+  restart: always
+  build: .
+  # build or pre-build image ?
+  # image:
+  ports:
+    - "8080:80"
+  volumes:
+     - ./bottle/:/var/www/bottle/
